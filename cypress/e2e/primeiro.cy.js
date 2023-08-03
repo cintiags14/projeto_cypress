@@ -13,6 +13,8 @@ describe('template spec', () => {
     cy.origin('https://www.cypress.io', () => {
     cy.get('#dropdownProduct').trigger('mouseover')
     cy.contains('Browser Testing').click();
+    cy.scrollTo(0, 500) 
+    //cy.get('[href="/cloud"]').scrollTo() // Scroll 'sidebar' to its bottom
   
     })
     })
