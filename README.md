@@ -10,6 +10,7 @@ Descrição curta do projeto.
 ## Descrição
 
 Este projeto tem como objetivo navegar pelo web site cypress.io e explorar as possíbilidades de testes nas interfaces do site.
+Realizar testes em API.
 
 ## Instalação
 
