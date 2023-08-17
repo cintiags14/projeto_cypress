@@ -1,24 +1,14 @@
 /// <reference types="cypress" />
 /// <reference types="cypress-xpath"/>
-
+import acessoAPagina from "../support/pages/acesso a pagina"
 
 
 describe('template spec', () => {
 
-  it('Pesquisa', () => {
-    cy.visit('https://www.google.com.br/?hl=pt-BR');
-    cy.get('textarea.gLFyf#APjFqb').type('cypress.io{enter}');
-    cy.contains('https://www.cypress.io').should('be.visible')
-    .click();
-    cy.origin('https://www.cypress.io', () => {
-    cy.get('#dropdownProduct').trigger('mouseover')
-    cy.contains('Browser Testing').click();
-    cy.scrollTo(0, 500) 
-    //cy.get('[href="/cloud"]').scrollTo() // Scroll 'sidebar' to its bottom
-  
-    })
-    })
+  it('Pesquisar e acessar', () => {
+    acessoAPagina.acessarPagina();
     
+  })
   })
 
 

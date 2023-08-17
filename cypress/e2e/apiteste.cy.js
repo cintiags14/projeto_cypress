@@ -1,5 +1,6 @@
 /// <reference types="Cypress"/>
 
+
 describe('Incluir dados', () => {
 
     it('POST', () =>{
@@ -23,4 +24,27 @@ describe('Incluir dados', () => {
             expect(retorno.status).equal(200)
         })
     })
+
+    it('GET', () =>{
+
+        cy.request({
+            method: 'GET',
+        url:'https://api.restful-api.dev/objects',
+        })
+        .then((response) =>{
+            expect(response.status).equal(200)
+        })
+    })
+
+    it.only('DETELE', ()=>{
+        cy.request({
+            method:'DELETE',
+            url:'https://api.restful-api.dev/objects/1'
+        })
+        .then((response) => {
+            expect(response.status).equal(200)
+        })
+    })
+
+
 })
