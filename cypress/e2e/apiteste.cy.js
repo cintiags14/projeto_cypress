@@ -36,15 +36,5 @@ describe('Incluir dados', () => {
         })
     })
 
-    it.only('DETELE', ()=>{
-        cy.request({
-            method:'DELETE',
-            url:'https://api.restful-api.dev/objects/1'
-        })
-        .then((response) => {
-            expect(response.status).equal(200)
-        })
-    })
-
 
 })
