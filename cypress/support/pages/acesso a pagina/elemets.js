@@ -1,5 +1,5 @@
 
 
 export const ELEMENTS ={
-    idproduct: '#dropdownProduct'
+    idclas: 'textarea.gLFyf#APjFqb'
 }
