@@ -1,12 +1,12 @@
 /// <reference types="cypress" />
 /// <reference types="cypress-xpath"/>
-import acessoAPagina from "../support/pages/acesso a pagina"
+import acessoAPagina from "../support/pages/acesso"
 
 
 describe('template spec', () => {
 
   it('Pesquisar e acessar', () => {
-    acesso.acessarPagina();
+    acessoAPagina.acessarPagina();
     
   })
   })
